@@ -1,0 +1,55 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  padding: 1rem;
+  width: 40%;
+  color: white;
+  background-color: brown;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(145, 145, 145);
+}
+
+.card > *{
+  width: 100%;
+}
+
+.card-tiltle{
+  font-size: 2rem;
+}
+
+.card-list{
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.card-list button{
+  width: 90%;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  background-color: lightgreen;
+  outline: none;
+}
+
+.card-list button:hover{
+  background-color: rgb(103, 214, 103);
+  cursor: pointer;
+}
