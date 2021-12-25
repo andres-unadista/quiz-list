@@ -29,8 +29,9 @@ export class UI{
   /**
    * 
    * @param {number} score Points of Quiz
+   * @param {number} total Total questions of Quiz
    */
-  printScore(score, callback){
+  printScore(score, total, callback){
     let $title = document.querySelector('.card-tiltle');
     let $list_container = document.querySelector('.card-list');
     let $list_footer = document.querySelector('.card-footer');
@@ -41,7 +42,11 @@ export class UI{
     const $h2 = document.createElement('h2')
     const $button = document.createElement('button')
     $title.innerText = 'Resultado'
-    $h2.innerText = `Puntos obtenidos: ${score}`
+    if (score === total) {
+      $h2.innerText = `¡Felicitaciones has respondido todas las preguntas (${score} de ${score})! 🎉✨`
+    } else {
+      $h2.innerText = `Puntos obtenidos: ${score}`
+    }
     $button.innerText = 'Reiniciar'
     
     $button.addEventListener('click', () => callback())

@@ -10,7 +10,7 @@ import { UI } from './models/UI.js';
  */
 const renderPage = (quiz, ui) => {
   if (quiz.isEnded()) {
-    ui.printScore(quiz.score, () => {
+    ui.printScore(quiz.score, quiz.questions.length,  () => {
       main();
     });
   } else {
