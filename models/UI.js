@@ -40,10 +40,14 @@ export class UI{
     $list_footer.innerText = ''
 
     const $h2 = document.createElement('h2')
+    $h2.className = 'title-answer'
     const $button = document.createElement('button')
     $title.innerText = 'Resultado'
     if (score === total) {
-      $h2.innerText = `¡Felicitaciones has respondido todas las preguntas (${score} de ${score})! 🎉✨`
+      const $titleMessage = document.createElement('h2')
+      $h2.innerText = `¡Felicitaciones!`
+      $titleMessage.innerHTML = `Has respondido todas las preguntas (${score} de ${score})! 🎉✨`
+      $list_container.append($titleMessage)
     } else {
       $h2.innerText = `Puntos obtenidos: ${score}`
     }

@@ -1,16 +1,16 @@
-body{
+body {
   padding: 0;
   margin: 0;
 }
 
-.container{
+.container {
   height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card{
+.card {
   padding: 1rem;
   width: 40%;
   color: white;
@@ -24,21 +24,21 @@ body{
   box-shadow: 5px 5px 5px rgb(145, 145, 145);
 }
 
-.card > *{
+.card > * {
   width: 100%;
 }
 
-.card-tiltle{
+.card-tiltle {
   font-size: 2rem;
 }
 
-.card-list{
+.card-list {
   list-style: none;
   padding: 1rem 0;
   margin: 0;
 }
 
-.card-list button{
+.card-list button {
   width: 90%;
   padding: 1rem;
   border: 0;
@@ -49,34 +49,38 @@ body{
   outline: none;
 }
 
-.card-list button:hover{
+.card-list button:hover {
   background-color: rgb(103, 214, 103);
   cursor: pointer;
 }
 
+.title-answer {
+  text-transform: uppercase;
+}
+
 /* MEDIA QUERIES */
-@media screen and (max-width: 600px){
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     height: 100vh;
   }
-  
-  .card{
+
+  .card {
     width: 90%;
     padding: 3rem 1rem;
     box-shadow: 5px 4px 9px rgb(145, 145, 145);
   }
-  
-  .card-tiltle{
+
+  .card-tiltle {
     font-size: 1.5rem;
   }
-  
-  .card-list{
+
+  .card-list {
     list-style: none;
     padding: 1rem 0;
     margin: 0;
   }
-  
-  .card-list button{
+
+  .card-list button {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
